@@ -1,0 +1,51 @@
+{
+  "name": "express-extra",
+  "version": "1.0.0",
+  "description": "Express with extra typings and validators",
+  "main": "./lib/app/index.js",
+  "types": "./lib/app/index.d.ts",
+  "scripts": {
+    "build": "rm -rf ./lib && tsc -p tsconfig.json",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "__comment": "Recommended versions are the one from devDependencies",
+  "dependencies": {
+    "tsdv-joi-express-middleware": "file:../local-tsdv-joi-express-middleware",
+    "express": "4.17.x"
+  },
+  "__recommended": "Recommended devDependencies for local-tsdv-joi-express-middleware:    npm i -D @hapi/joi@15.0.1 @types/hapi__joi@15.0.1 reflect-metadata@0.1.13 @types/reflect-metadata@0.1.0",
+  "devDependencies": {
+    "@hapi/joi": "^15.0.1",
+    "@types/express": "4.16.1",
+    "@types/hapi__joi": "^15.0.1",
+    "@types/jest": "^24.0.13",
+    "@types/node": "10.10.1",
+    "@types/reflect-metadata": "^0.1.0",
+    "express": "4.17.1",
+    "jest": "^24.8.0",
+    "reflect-metadata": "^0.1.13",
+    "ts-jest": "^24.0.2",
+    "ts-node": "1.6.0",
+    "tsdv-joi": "file:../fider-tsdv-joi",
+    "tslint": "5.11.0",
+    "typescript": "^3.5.1"
+  },
+  "author": "Wojciech Fiderek <w.fiderek@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fider/express-extra.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fider/express-extra/issues"
+  },
+  "homepage": "https://github.com/fider/express-extra#readme",
+  "keywords": [
+    "tsdv",
+    "joi",
+    "express",
+    "validator",
+    "extra"
+  ]
+}
